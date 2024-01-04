@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lab 2</title>
+  </head>
+  <body>
+    <script>
+      while (true) {
+        var age = prompt("enter your age");
+        while (age < 0) {
+          alert("please enter a positive number ");
+          prompt("enter your age");
+        }
+        if (age > 0) {
+          if (age < 11) {
+            alert("this is a child");
+          } else if (age < 19) {
+            alert("this is a teenager");
+          } else if (age < 50) {
+            alert("This is a grown up");
+          } else {
+            alert("This is an old person");
+          }
+        }
+        if (age === null) {
+          alert("You're leaving the page");
+          break;
+        }
+      }
+    </script>
+    <br />
+    <script>
+      name = new Array();
+      name = prompt("Enter your name");
+      let count = 0;
+      for (var i = 0; i < name.length; i++) {
+        switch (name[i]) {
+          case "a":
+          case "A":
+            count++;
+            break;
+          case "e":
+          case "E":
+            count++;
+            break;
+          case "O":
+          case "o":
+            count++;
+            break;
+          case "i":
+          case "I":
+            count++;
+            break;
+          case "u":
+          case "U":
+            count++;
+            break;
+        }
+      }
+      alert(`number of vowels in ${name} is ${count}`);
+    </script>
+    <br />
+    <script>
+      var time = prompt("enter the time");
+      if (time >= 0 && time <= 23) {
+        if (time == 0) {
+          alert("the time is 12 Am");
+        } else if (time == 12) {
+          alert("the time is 12 Pm");
+        } else if (time <= 11) {
+          alert(`the time is ${time} Am`);
+        } else if (time >= 12) {
+          alert(`the time is ${time - 12} Pm`);
+        }
+      }
+    </script>
+  </body>
+</html>

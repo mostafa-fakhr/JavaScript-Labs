@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lab1</title>
+  </head>
+
+  <body>
+    <script>
+      var fName = prompt("Enter your first name ");
+      var lName = prompt("Enter your last name ");
+      var isName = confirm(`Is your name "${fName} ${lName}"`);
+      while (isName != true) {
+        var fName = prompt("Enter your first name ");
+        var lName = prompt("Enter your last name ");
+        var isName = confirm(`Is your name "${fName} ${lName}"`);
+      }
+
+      var birthYear = prompt("Enter your birth year");
+      age = 2023 - birthYear;
+      alert(`Welcome ${fName} ${lName} you are ${age} years old `);
+      document.write(`Welcome ${fName} ${lName} you are ${age} years old `);
+    </script>
+    <br />
+    <script>
+      alert(
+        "This is the first release of a calculator and it only has the summation feature"
+      );
+      var num1 = prompt("Enter your first number");
+      var num2 = prompt("Enter your second number");
+      var result = Number(num1) + Number(num2);
+      document.write(
+        `The result of the sum of ${num1} and ${num2} equals ${result}`
+      );
+    </script>
+  </body>
+</html>
