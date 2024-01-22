@@ -1,0 +1,88 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+}
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background-color: #f2f2f2;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border: 1px lightgray solid;
+  border-radius: 10px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  width: 100%;
+  margin-top: 85px;
+}
+input {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 70%;
+}
+button {
+  border: none;
+  border-radius: 5px;
+  background-color: cornflowerblue;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+}
+#list-container {
+  list-style: none;
+  font-size: 17px;
+
+  user-select: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.action-img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  padding: 0 5px;
+}
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px lightgray solid;
+  border-left: 1px lightgray solid;
+  border-right: 1px lightgray solid;
+}
+.checked {
+  background-color: lightgreen;
+}
+.buttons-wrapper {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  width: 19px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.todo-item:first-child {
+  border-top: 1px lightgrey solid;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.todo-item:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

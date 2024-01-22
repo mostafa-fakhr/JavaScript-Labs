@@ -1,0 +1,53 @@
+body {
+  background-color: lightgreen;
+}
+
+/* Full-width input fields */
+form input {
+  background-color: #eee;
+  width: 90%;
+  padding: 12px 20px;
+  margin: 10px auto;
+  display: flex;
+  border: none;
+  box-sizing: border-box;
+}
+
+form {
+  width: 300px;
+  background-color: #ffffff; /* Set background color for the form if needed */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Set a style for all buttons */
+button {
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  width: 100%;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.create-account a {
+  text-decoration: none;
+  color: lightskyblue;
+}
